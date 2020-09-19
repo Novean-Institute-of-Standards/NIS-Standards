@@ -51,7 +51,7 @@ The *Speed Zone* of a location is the outermost boundary of the port interchange
 The *Alignment Zone* of a location is next closest boundary of the Port Interchange, and is concentric with the Speed Zone.  For planar locations, it is a cylinder with a radius of *N* m, extending upward into the space around a location.  for space-based locations, it is a sphere of *N* m, which is concentric to the Speed Zone.  The purpose of the Alignment Zone is to define an area from which a vehicle will change from travelling in a straight line towards/away from a location into the "circling" pattern defined by the Transition Zone.  All guidelines for vehicles in the Speed zone also apply to this zone.
 
 ### Transition Zone
-The *Transition Zone* of a location defines the path to be taken by vehicles before turning into Approach and take-off vectors.  For planar locations, this zone will be a circle with a radius of *N* m, and runs parallel at a pre-defined height above the surface.  For orbital locations, this zone will be a circle that is coplanar with the approach and take-off vectors and aligned with the locations gravity(if any).  pilots will use this zone to maintain a set distance from the location's waypoint.  Like the Alignment zone, the Transition zone is also within the speed zone, and all guidelines for vehicles within the speed zone apply to this zone as well.
+The *Transition Zone* of a location defines the path to be taken by vehicles before turning into *Approach* and *Take-off Vectors*.  For planar locations, this zone will be a circle with a radius of *N* m, and runs parallel at a pre-defined height above the surface.  For orbital locations, this zone will be a circle that is coplanar with the approach and take-off vectors and aligned with the locations gravity(if any).  pilots will use this zone to maintain a set distance from the location's waypoint.  Like the Alignment zone, the Transition zone is also within the speed zone, and all guidelines for vehicles within the speed zone apply to this zone as well.
 
 #### Approach and Take-off Vectors
 The *Approach Vector* and *Take-off Vector* are separate direction indicators moving towards and away from a location, respectively.  For vehicles on an Approach Vector, a location may have a lower speed and right-of-way guidelines for the purpose of taxiing out of the vector and onto a final landing point.  For vehicles intending to take off,  location-specific guidelines may be made concerning right-of-way when entering a Take-off Vector.
@@ -72,7 +72,7 @@ The *Approach Vector* and *Take-off Vector* are separate direction indicators mo
 
 **Approach and Take-off Vector Indicators.**  As a Facility Owner,  there is no current guideline for the manner in which *Vector Indicators* should be advertised to Pilots, however, the visibility of these indicators should be clear and conspicuous to any pilot currently within the *Transition Zone*.  Any combination of voxels and/or screens may be used to communicate this information; with a strong preference towards voxels, as their visibility is much clearer compared to screens.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDI5MTkwNjAsMTUyMzMyNzE2OSwtMj
+eyJoaXN0b3J5IjpbLTE2Nzc2MzM2MjIsMTUyMzMyNzE2OSwtMj
 A3NTEyNzYzMCw0NTQ4MzY3MjYsLTE0MzU4NDEzNzEsOTI1MDA0
 MDk5XX0=
 -->
