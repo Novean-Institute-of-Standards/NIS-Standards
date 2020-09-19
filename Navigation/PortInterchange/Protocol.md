@@ -63,14 +63,14 @@ the *Approach Vector* and *Take-off Vector* are separate direction indicators mo
 ### For Pilots and Navigators
 **Speed Zone.**  For pilots approaching a location piloting vehicles that may not be able to completely slow their vehicle to the indicated limit *before* approaching the alignment zone, should start to reduce speed *before* entering the speed zone to ensure this limit is attainable.  Along with adhering to the speed limits, a pilot approaching a location and moving within the speed zone should begin to alter their course from a pointing straight line towards a location's waypoint, to one that is a tangent to the boundary of the alignment zone, placing the waypoint on the L/R side.
 
-**Alignment zone.**  This zone may also have a higher density of traffic, therefore pilots should be increasingly more cautious when entering and leaving this zone.  When pilots are departing from a location and are in the Alignment zone to the speed zone, their waypoint can be changed another in regards to their destination, and then may proceed in a straight vector towards it.  Pilots merging into the Alignment zone must yield to to traffic merging into 
+**Alignment Zone.**  This zone may also have a higher density of traffic, therefore pilots should be increasingly more cautious when entering and leaving this zone.  When pilots are departing from a location and are in the Alignment zone to the speed zone, their waypoint can be changed another in regards to their destination, and then may proceed in a straight vector towards it.  Pilots merging into the Alignment zone from the *Take-off Vector* must yield to to traffic already in the Alignment Zone, as well as any vehicles entering the Alignment zone 
 
-**Transition zone.**   Approaching vehicles should remain in this zone until both a transition to the approach vector can be made without further intrusion into the location, and when there is no traffic blocking such a maneuver. Inversely, pilots with the intent to take-off and merge into the transition zone.
+**Transition Zone.**   Approaching vehicles should remain in this zone until both a transition to the approach vector can be made without further intrusion into the location, and when there is no traffic blocking such a maneuver. Inversely, pilots with the intent to take-off and merge into the transition zone.
 
 ### For Facility Owners
 **
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4NDI3NTY3MSwxNTIzMzI3MTY5LC0yMD
+eyJoaXN0b3J5IjpbLTYxNTkyNzYwMSwxNTIzMzI3MTY5LC0yMD
 c1MTI3NjMwLDQ1NDgzNjcyNiwtMTQzNTg0MTM3MSw5MjUwMDQw
 OTldfQ==
 -->
