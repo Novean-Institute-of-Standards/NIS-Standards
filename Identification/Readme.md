@@ -1,12 +1,9 @@
 # Identification
-[Home](../Readme.md) - [Parent Page](../Readme.md)
 
-## About
+Identification is the process of self-identify yourself to a port, waystations and other ships. 
 
-## Table of Contents
-
-- [Identification](Readme.md)
-	- [Semiotics](Semiotics.md)
+- [Semiotics](Semiotics.md)
+  - [Flagging](Flagging.md)
 
 
 
