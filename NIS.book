@@ -61,11 +61,10 @@ epub.version: 3
 - Acknowledgements.md
 - About.md
 + Guidelines/Readme.md
--- Guidelines/WritingFormatting.md
 -- Guidelines/ChangingStandards.md
+-- Guidelines/WritingFormatting.md
 -- Guidelines/Appeals.md
 + Identification/Readme.md
--- Identification/Semiotics.md
---- Identification/Flagging.md
+-- Identification/Semiotics/Semiotics.md
 + Navigation/Readme.md
 -- Navigation/PortInterchange/Protocol.md

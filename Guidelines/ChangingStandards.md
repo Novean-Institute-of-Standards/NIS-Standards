@@ -2,6 +2,10 @@
 
 The guidelines for submitting a modification to a standard contained in this book.
 
+- [What is a SIP?](#what-is-a-sip)
+- [SIP Types](#sip-types)
+
+
 ## What is a SIP?
 
 SIP stands for Standards Improvement Proposal. A SIP is a design document providing information to NIS describing a new standard, recommendation, or a change to an existing standard. The SIP should provide a concise specification of the feature and a rationale for the feature.
