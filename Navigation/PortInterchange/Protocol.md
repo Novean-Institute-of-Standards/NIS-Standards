@@ -48,13 +48,13 @@ All zones of the Port Interchange will be concentric to a waypoint, placed just 
 The *Speed Zone* of a location is the outermost boundary of the port interchange.  It is the first interaction with an interchange for players arriving to a location, and the last interaction for players travelling away from a location.  for surface-based locations, it is a cylinder with a radius of *N* meters(m), with the base of which is coplanar with the surface around a location, extending upwards around the space of a location. for locations in space, it is a sphere with a radius of *N* m.  while the player is inside of this zone, a vehicle's speed should remain as close to *N* kilometers per hour(km/h) as possible.
 
 ### Alignment Zone
-The *Alignment Zone* of a location is next closest boundary of the port interchange, and is concentric with the Speed Zone.  for planar locations, it is a cylinder with a radius of *N* m, extending upward into the space around a location.  for space-based locations, it is a sphere of *N* m, which is concentric to the Speed Zone.  The purpose of the Alignment Zone is to define an area from which a vehicle will change from travelling in a straight line towards/away from a location into the "circling" pattern defined by the *Transition Zone*.  all guidelines for vehicles in the *Speed zone* also apply to this zone.
+The *Alignment Zone* of a location is next closest boundary of the port interchange, and is concentric with the Speed Zone.  for planar locations, it is a cylinder with a radius of *N* m, extending upward into the space around a location.  for space-based locations, it is a sphere of *N* m, which is concentric to the Speed Zone.  The purpose of the Alignment Zone is to define an area from which a vehicle will change from travelling in a straight line towards/away from a location into the "circling" pattern defined by the Transition Zone.  all guidelines for vehicles in the Speed zone also apply to this zone.
 
 ### Transition Zone
 The *Transition Zone* of a location defines the path to be taken by vehicles before turning into Approach and take-off vectors.  for planar locations, this zone will be a circle with a radius of *N* m, and runs parallel at a pre-defined height above the surface.  for orbital locations, this zone will be a circle that is coplanar with the approach and take-off vectors and aligned with the locations gravity(if any).  pilots will use this zone to maintain a set distance from the location's waypoint.  Like the Alignment zone, the Transition zone is also within the speed zone, and all guidelines for vehicles within the speed zone apply to this zone as well.
 
 #### Approach and Take-off Vectors
-the *Approach Vector* and *Take-off Vector* are separate direction indicators moving towards and away from a location, respectively.  for vehicles on an approach vector, a location may have a lower speed and right-of-way guidelines for the purpose of taxiing out of the vector and onto a final landing point.  For vehicles intending to take off,  location-specific guidelines may be made concerning right-of-way when entering a take-off vector.
+the *Approach Vector* and *Take-off Vector* are separate direction indicators moving towards and away from a location, respectively.  for vehicles on an approach vector, a location may have a lower speed and right-of-way guidelines for the purpose of taxiing out of the vector and onto a final landing point.  For vehicles intending to take off,  location-specific guidelines may be made concerning right-of-way when entering a Take-off Vector.
 
 #### Vertical Take-off and Landing (VTOL) concepts
 
@@ -63,7 +63,7 @@ the *Approach Vector* and *Take-off Vector* are separate direction indicators mo
 ### For Pilots and Navigators
 **Speed Zone.**  For pilots approaching a location piloting vehicles that may not be able to completely slow their vehicle to the indicated limit *before* approaching the alignment zone, should start to reduce speed *before* entering the speed zone to ensure this limit is attainable.  Along with adhering to the speed limits, a pilot approaching a location and moving within the speed zone should begin to alter their course from a pointing straight line towards a location's waypoint, to one that is a tangent to the boundary of the alignment zone, placing the waypoint on the L/R side.
 
-**Alignment Zone.**  This zone may also have a higher density of traffic, therefore pilots should be increasingly more cautious when entering and leaving this zone.  When pilots are departing from a location and are in the Alignment zone to the speed zone, their waypoint can be changed another in regards to their destination, and then may proceed in a straight vector towards it, while yielding to any traffic mergin
+**Alignment Zone.**  This zone may also have a higher density of traffic, therefore pilots should be increasingly more cautious when entering and leaving this zone.  When pilots are departing from a location and are in the Alignment zone to the speed zone, their waypoint can be changed another in regards to their destination, and then may proceed in a straight vector towards it, while yielding to any traffic merging in from the Speed Zone.
 
 **Transition Zone.**   Approaching vehicles should remain in this zone until both a transition to the approach vector can be made without further intrusion into the location, and when there is no traffic blocking such a maneuver. Inversely, pilots with the intent to take-off and merge into the Transition Zone from the Take-off Vector must yield to traffic entering or already present in the Transition Zone, or traffic merging in from the Alignment Zone.
 
@@ -72,7 +72,7 @@ the *Approach Vector* and *Take-off Vector* are separate direction indicators mo
 
 **Approach and Take-off Vector Indicators.**  As a Facility Owner,  there is no current guideline for the manner in which *Vector Indicators* should be advertised to Pilots, however, the visibility of these indicators should be clear and conspicuous to any pilot currently within the *Transition Zone*.  any combination of voxels and/or screens may be used to communicate this information; with a strong preference towards voxels, as their visibility is much clearer compared to screens.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzY1MDQyMTc4LDE1MjMzMjcxNjksLTIwNz
-UxMjc2MzAsNDU0ODM2NzI2LC0xNDM1ODQxMzcxLDkyNTAwNDA5
-OV19
+eyJoaXN0b3J5IjpbLTIwODQ4NjkwODgsMTUyMzMyNzE2OSwtMj
+A3NTEyNzYzMCw0NTQ4MzY3MjYsLTE0MzU4NDEzNzEsOTI1MDA0
+MDk5XX0=
 -->
