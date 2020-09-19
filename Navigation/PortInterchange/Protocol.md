@@ -1,6 +1,6 @@
-# DRAFT: Port Interchange Protocol:
+# Port Interchange Protocol: 1ST DRAFT - PROPOSAL
 
-*Concept: a proposal for a standard of customs to be utilized for take-off from, and landing at, locations in* Dual Universe
+*Summary: A standard of customs to be utilized for take-off from, and landing at, locations in* Dual Universe.
 
 - [Introduction](#introduction)
   - [Motivation](#motivation)
@@ -70,7 +70,7 @@ the *Approach Vector* and *Take-off Vector* are separate direction indicators mo
 ### For Facility Owners
 **
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDk3MDIxMjgsMTUyMzMyNzE2OSwtMj
-A3NTEyNzYzMCw0NTQ4MzY3MjYsLTE0MzU4NDEzNzEsOTI1MDA0
-MDk5XX0=
+eyJoaXN0b3J5IjpbLTYzOTIwMTA4NywxNTIzMzI3MTY5LC0yMD
+c1MTI3NjMwLDQ1NDgzNjcyNiwtMTQzNTg0MTM3MSw5MjUwMDQw
+OTldfQ==
 -->
