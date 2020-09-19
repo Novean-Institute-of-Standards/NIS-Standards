@@ -68,11 +68,11 @@ the *Approach Vector* and *Take-off Vector* are separate direction indicators mo
 **Transition Zone.**   Approaching vehicles should remain in this zone until both a transition to the approach vector can be made without further intrusion into the location, and when there is no traffic blocking such a maneuver. Inversely, pilots with the intent to take-off and merge into the transition zone.
 
 ### For Facility Owners
-**Zone Radii and Speed Limits.**  For the purposes of the proposal of this standard, none of distances and speeds referenced within this proposal have been given real values.  Further discussion will be needed to discern the needs of this standard.
+**Zone Sizes and Speed Limits.**  For the purposes of the proposal of this standard, none of distances and speeds referenced within this proposal have been given real values.  Further discussion will be needed to discern the needs of this standard.
 
-**Approach and 
+**Approach and Take-off Vector Indicators.**  As a Facility Owner, 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTM2NDc2NTAsMTUyMzMyNzE2OSwtMj
-A3NTEyNzYzMCw0NTQ4MzY3MjYsLTE0MzU4NDEzNzEsOTI1MDA0
-MDk5XX0=
+eyJoaXN0b3J5IjpbLTE5OTkyNzI4OCwxNTIzMzI3MTY5LC0yMD
+c1MTI3NjMwLDQ1NDgzNjcyNiwtMTQzNTg0MTM3MSw5MjUwMDQw
+OTldfQ==
 -->
