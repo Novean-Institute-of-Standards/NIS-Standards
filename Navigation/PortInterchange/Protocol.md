@@ -70,9 +70,9 @@ the *Approach Vector* and *Take-off Vector* are separate direction indicators mo
 ### For Facility Owners
 **Zone Sizes and Speed Limits.**  For the purposes of the proposal of this standard, none of distances and speeds referenced within this proposal have been given real values.  Further discussion will be needed to discern the needs of this standard.
 
-**Approach and Take-off Vector Indicators.**  As a Facility Owner,  there is no current guideline for the manner in which Vector Indicators should be advertised to Pilots, however, the visibility of the VEc
+**Approach and Take-off Vector Indicators.**  As a Facility Owner,  there is no current guideline for the manner in which Vector Indicators should be advertised to Pilots, however, the visibility of these indicators should be clear and conspicuous to any pilot currently within the Transition Zone.  any combination of voxels and/or screens may be used to communicate this information; with a strong preference towards voxels, as their visibility is much clearer fr
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1ODg3NDcwLDE1MjMzMjcxNjksLTIwNz
+eyJoaXN0b3J5IjpbLTMzNzg1OTQ3LDE1MjMzMjcxNjksLTIwNz
 UxMjc2MzAsNDU0ODM2NzI2LC0xNDM1ODQxMzcxLDkyNTAwNDA5
 OV19
 -->
