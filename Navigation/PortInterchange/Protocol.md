@@ -30,7 +30,7 @@ Another motivation for this proposal is simplicity.  As of this document’s cre
 
 **Zones.**  A *Zone* is an area, defined in its simplest form as a circle, and extended into cylinders and spheres, whose radii are derived from the distance from a location's waypoint,  Indicating a specific pattern of behavior for a pilot to adhere to within the specified area.
 
-**Port Facilities.**  A *Port Facility* in the scope of this proposal is a specific, centralized location that any number of players may travel to and from using vehicles, and usually provides dedicated areas for landing, refitting/refueling, and take-off.  Examples of port facilities are organization headquarters, player-made spaceports and space stations.
+**Port Facilities.**  A *Port Facility* in the scope of this proposal is a specific, centralized location that any number of players may travel to and from using vehicles, and usually provides dedicated areas for landing, refitting/refueling, and take-off.  Examples of port facilities are organization headquarters, surface-borne player-made spaceports and space stations.
 
 **Navigational Aids.**  A *Navigational* Aid can be a waypoint(destination), or a vector indicator - a physical representation of the direction a vehicle should be travelling along when taking off or landing.  Currently, the waypoint and vector indicator are the only tools provided in-game.
 
@@ -68,6 +68,6 @@ The *Transition Zone* of a location defines the path to be taken by vehicles bef
 
 ### For Facility Owners
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDU0ODM2NzI2LC0xNDM1ODQxMzcxLDkyNT
-AwNDA5OV19
+eyJoaXN0b3J5IjpbLTIwNzUxMjc2MzAsNDU0ODM2NzI2LC0xND
+M1ODQxMzcxLDkyNTAwNDA5OV19
 -->
