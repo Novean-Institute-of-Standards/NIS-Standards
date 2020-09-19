@@ -53,7 +53,7 @@ The *Alignment Zone* of a location is next closest boundary of the port intercha
 
 ### Transition Zone
 
-The *Transition Zone* of a location defines the path to be taken by vehicles before turning into Approach and take-off vectors.  for planar locations, this zone will be a circle with a radius of *N* m, and runs parallel at a pre-defined height above the surface.  for orbital locations, this zone will be a circle that is coplanar with the approach and take-off vectors and aligned with the locations gravity(if any).  pilots will use this zone to maintain a set distance from the location's waypoint.  Approaching vehicles should remain in this zone until both a transition to the approach vector can be made without further intrusion into the location, and when there is no traffic blocking such a maneuver.
+The *Transition Zone* of a location defines the path to be taken by vehicles before turning into Approach and take-off vectors.  for planar locations, this zone will be a circle with a radius of *N* m, and runs parallel at a pre-defined height above the surface.  for orbital locations, this zone will be a circle that is coplanar with the approach and take-off vectors and aligned with the locations gravity(if any).  pilots will use this zone to maintain a set distance from the location's waypoint.
 
 #### Approach and Take-off Vectors
 
@@ -67,10 +67,12 @@ The *Transition Zone* of a location defines the path to be taken by vehicles bef
 
 **Alignment zone.**  This zone may also have a higher density of traffic, therefore pilots should be increasingly more cautious when entering and leaving this zone.  when pilots are departing from a location and are in the Alignment zone to the speed zone, their waypoint can be changed another in regards to their destination, and then may proceed in a straight vector towards it.
 
+**
+
 
 
 
 ### For Facility Owners
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4NTYzNjAzNCw5MjUwMDQwOTldfQ==
+eyJoaXN0b3J5IjpbLTU0ODQwODI4OSw5MjUwMDQwOTldfQ==
 -->
