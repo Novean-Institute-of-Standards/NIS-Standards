@@ -28,7 +28,7 @@ Another motivation for this proposal is simplicity.  As of this document’s cre
 ### Key Concepts
 **Dead Reckoning.**  All elements of this standard are centered around information provided by waypoints (Destinations), therefore any element dealing with distance will use the player's distance from a particular waypoint.
 
-**Zones.**  A *Zone* is an area, defined in its simplest form as a circle, and extended into cylinders and spheres, indicating a specific pattern of behavior for a pilot to adhere to within the specified area.
+**Zones.**  A *Zone* is an area, defined in its simplest form as a circle, and extended into cylinders and spheres, whoindicating a specific pattern of behavior for a pilot to adhere to within the specified area.
 
 **Port Facilities.**  A *Port Facility* in the scope of this proposal is a specific, centralized location that any number of players may travel to and from using vehicles, and usually provides dedicated areas for landing, refitting/refueling, and take-off.  Examples of port facilities are organization headquarters, player-made spaceports and space stations.
 
@@ -68,5 +68,6 @@ The *Transition Zone* of a location defines the path to be taken by vehicles bef
 
 ### For Facility Owners
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzU4NDEzNzEsOTI1MDA0MDk5XX0=
+eyJoaXN0b3J5IjpbMTkzMDkyMzk0NSwtMTQzNTg0MTM3MSw5Mj
+UwMDQwOTldfQ==
 -->
