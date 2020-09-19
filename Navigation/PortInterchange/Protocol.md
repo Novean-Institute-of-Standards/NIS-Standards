@@ -53,7 +53,7 @@ The *Alignment Zone* of a location is next closest boundary of the port intercha
 
 ### Transition Zone
 
-The *Transition Zone* of a location defines the path to be taken by vehicles before turning into Approach and take-off vectors.  for planar locations, this zone will be a circle with a radius of *N* m, and runs parallel at a pre-defined height above the surface.  for orbital locations, this zone will be a circle that is coplanar with the approach and take-off vectors and aligned with the locations gravity(if any).  pilots will use this zone to maintain a set distance from the location's waypoint, and should follow this zone until 
+The *Transition Zone* of a location defines the path to be taken by vehicles before turning into Approach and take-off vectors.  for planar locations, this zone will be a circle with a radius of *N* m, and runs parallel at a pre-defined height above the surface.  for orbital locations, this zone will be a circle that is coplanar with the approach and take-off vectors and aligned with the locations gravity(if any).  pilots will use this zone to maintain a set distance from the location's waypoint.  Approaching vehicles should 
 
 #### Approach and Take-off Vectors
 
@@ -72,5 +72,5 @@ The *Transition Zone* of a location defines the path to be taken by vehicles bef
 
 ### For Facility Owners
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2MzQ0MzkyMCw5MjUwMDQwOTldfQ==
+eyJoaXN0b3J5IjpbMTE5MTkzMDM2OSw5MjUwMDQwOTldfQ==
 -->
