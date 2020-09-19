@@ -57,11 +57,12 @@ The *Transition Zone* of a location defines the path to be taken by vehicles bef
 The *Approach Vector* and *Take-off Vector* are separate direction indicators moving towards and away from a location, respectively.  For vehicles on an Approach Vector, a location may have a lower speed and right-of-way guidelines for the purpose of taxiing out of the vector and onto a final landing point.  For vehicles intending to take off,  location-specific guidelines may be made concerning right-of-way when entering a Take-off Vector.
 
 #### Vertical Take-off and Landing (VTOL) concepts
+further discussion on this set of concepts is needed.
 
 ## Implementation
 
 ### For Pilots and Navigators
-**Speed Zone.**  For pilots approaching a location piloting vehicles that may not be able to completely slow their vehicle to the indicated limit *before* approaching the alignment zone, should start to reduce speed *before* entering the speed zone to ensure this limit is attainable.  Along with adhering to the speed limits, a pilot approaching a location and moving within the speed zone should begin to alter their course from a pointing straight line towards a location's waypoint, to one that is a tangent to the boundary of the alignment zone, placing the waypoint on the L/R side.
+**Speed Zone.**  For pilots approaching a location piloting vehicles that may not be able to completely slow their vehicle to the indicated limit *before* approaching the alignment zone, *must* start to reduce speed *before* entering the speed zone to ensure this limit is attainable.  Along with adhering to the speed limits, a pilot approaching a location and moving within the speed zone should begin to alter their course from a pointing straight line towards a location's waypoint, to one that is a tangent to the boundary of the alignment zone, placing the waypoint on the L/R side.
 
 **Alignment Zone.**  This zone may also have a higher density of traffic, therefore pilots should be increasingly more cautious when entering and leaving this zone.  When pilots are departing from a location and are in the Alignment zone to the speed zone, their waypoint can be changed another in regards to their destination, and then may proceed in a straight vector towards it, while yielding to any traffic merging in from the Speed Zone.
 
@@ -72,7 +73,7 @@ The *Approach Vector* and *Take-off Vector* are separate direction indicators mo
 
 **Approach and Take-off Vector Indicators.**  As a Facility Owner,  there is no current guideline for the manner in which *Vector Indicators* should be advertised to Pilots, however, the visibility of these indicators should be clear and conspicuous to any pilot currently within the *Transition Zone*.  Any combination of voxels and/or screens may be used to communicate this information; with a strong preference towards voxels, as their visibility is much clearer compared to screens.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2Nzc2MzM2MjIsMTUyMzMyNzE2OSwtMj
+eyJoaXN0b3J5IjpbLTE1MTgwNzcyNDgsMTUyMzMyNzE2OSwtMj
 A3NTEyNzYzMCw0NTQ4MzY3MjYsLTE0MzU4NDEzNzEsOTI1MDA0
 MDk5XX0=
 -->
