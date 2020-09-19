@@ -11,8 +11,10 @@ A special thank you is extended to all organizations and individuals who have co
 * Juvenius Drakonius
   
 **Donors**
+
 *Igneus Tempus
 *Akanixon
 
 **Member Organizations**
+
 *Rekium
