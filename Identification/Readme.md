@@ -5,8 +5,8 @@
 
 ## Table of Contents
 
-- [Identification](Identification)
-	- [Semiotics](Identification/Semiotics.md)
+- [Identification](Readme.md)
+	- [Semiotics](Semiotics.md)
 
 
 
