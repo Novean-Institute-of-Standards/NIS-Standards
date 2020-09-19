@@ -2,19 +2,20 @@
 
 *Summary: A standard of customs to be utilized for take-off from, and landing at, locations in* Dual Universe.
 
-- [Introduction](#introduction)
-  - [Motivation](#motivation)
-  - [Key Concepts](#key-concepts)
-  - [Issues not addressed by this proposal](#issues-not-addressed-by-this-proposal)
-- [Port Interchange](#the-port-interchange)
-  - [Speed Zone](#speed-zone)
-  - [Alignment Zone](#alignment-zone)
-  - [Transition Zone](#transition-zone)
+- [Port Interchange Protocol: 1ST DRAFT - PROPOSAL](#port-interchange-protocol-1st-draft---proposal)
+  - [Introduction](#introduction)
+    - [Motivation](#motivation)
+    - [Key Concepts](#key-concepts)
+    - [Issues not addressed by this proposal](#issues-not-addressed-by-this-proposal)
+  - [The Port Interchange](#the-port-interchange)
+    - [Speed Zone](#speed-zone)
+    - [Alignment Zone](#alignment-zone)
+    - [Transition Zone](#transition-zone)
     - [Approach and Take-off Vectors](#approach-and-take-off-vectors)
-    - [Vertical Take-off and Landing concepts](#vertical-take-off-and-landing-vtol-concepts)
-- [Implementation](#implementation)
-  - [For Pilots and Navigators](#for-pilots-and-navigators)
-  - [For Facility Owners](#for-facility-owners)
+    - [Vertical Take-off and Landing (VTOL) concepts](#vertical-take-off-and-landing-vtol-concepts)
+  - [Implementation](#implementation)
+    - [For Pilots and Navigators](#for-pilots-and-navigators)
+    - [For Facility Owners](#for-facility-owners)
 
 
 ## Introduction
@@ -95,13 +96,13 @@ For orbital locations, this zone will be a circle that is coplanar with the appr
 
 Like the Alignment zone, the Transition zone is also within the speed zone, and all guidelines for vehicles within the speed zone apply to this zone as well.
 
-#### Approach and Take-off Vectors
+### Approach and Take-off Vectors
 
 The *Approach Vector* and *Take-off Vector* are separate direction indicators moving towards and away from a location, respectively.  
 
 For vehicles on an Approach Vector, a location may have a lower speed and right-of-way guidelines for the purpose of taxiing out of the vector and onto a final landing point.  For vehicles intending to take off,  location-specific guidelines may be made concerning right-of-way when entering a Take-off Vector.
 
-#### Vertical Take-off and Landing (VTOL) concepts
+### Vertical Take-off and Landing (VTOL) concepts
 
 further discussion on this set of concepts is needed.
 
