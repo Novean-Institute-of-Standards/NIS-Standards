@@ -7,7 +7,7 @@ Available for download in the following formats:
 [html](docs/book/NIS.html) - 
 [epub](docs/book/NIS.pdf) 
 
-[![Followers](https://img.shields.io/github/followers/Novean-Institute-of-Standards?style=social)]() [![Fork](https://img.shields.io/github/forks/Novean-Institute-of-Standards/NIS-Standards?label=Fork&style=social)]() [![Watch](https://img.shields.io/github/watchers/Novean-Institute-of-Standards/NIS-Standards?label=Watch&style=social)]()
+[![Fork](https://img.shields.io/github/forks/Novean-Institute-of-Standards/NIS-Standards?label=Fork&style=social)]() [![Watch](https://img.shields.io/github/watchers/Novean-Institute-of-Standards/NIS-Standards?label=Watch&style=social)]()
 
 
 ## Table of Contents
