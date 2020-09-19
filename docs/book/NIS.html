@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="crowbook">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Novean Institute of Standards">
+    
+    <title>NIS Manual</title>
+    <style type = "text/css">
+      body {
+    font-family: "Linux Libertine", "Georgia", serif;
+    text-align: justify;
+    font-size: 100%;
+}
+
+p {
+    text-indent: 1.25em;
+    margin:0;
+    hyphens: auto;
+}
+
+blockquote {
+    margin: 1em;
+    font-style: italic;
+}
+code {
+    font-size: 80%;
+    font-family: "Linux Libertine Mono", monospace;
+    background-color: #F0F0F0;
+}
+pre {
+    font-family: "Linux Libertine Mono", monospace;
+    margin: 1em;
+    padding-top: 0;
+    background-color: #F0F0F0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+/* Try to disable hyphenation in titles */
+h1, h2, h3, h4, h5, h5 {
+    adobe-hyphenate: none;
+    -ms-hyphens: none; /* Trident (Windows) */
+    -moz-hyphens: none; /* Gecko (Firefox) */
+    -webkit-hyphens: none; /* Webkit */
+    -epub-hyphens: none; /* EPUB 3 */
+    hyphens: none; /* Futur standard */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: left;
+    font-family: Linux Biolinum, sans-serif;
+    font-variant: small-caps;
+}
+
+/* Title of a part */
+h1.part {
+    font-size: 250%;
+    text-align: center;
+}
+
+/* The `Part X` section of a part */
+h2.part {
+    font-size: 175%;
+    text-align: center;
+}
+
+/* The "Chapter X" section of a chapter */
+span.chapter-header {
+    font-size: 75%;
+}
+
+/* Title of the book */
+h1.title {
+    text-align: center;
+    font-size: 300%;
+}
+/* Author */
+h2.author {
+    text-align: right;
+    font-size:  200%;
+}
+
+/* Subtitle */
+h2.subtitle {
+    text-align: center;
+    font-size: 200%;
+}
+
+/* When toc is displayed inlined */
+#toc ol, #toc ul {
+    padding: 0;
+    margin-left: 1em;
+}
+#toc li {
+    list-style-type: none;
+    margin: 0; padding: 0;
+}
+
+#toc li:before {
+    content: none;
+}
+
+#cover img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.image {
+    margin: auto;
+    width: 80%;
+}
+
+.image img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.rule {
+    text-align: center !important;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    page-break-after: avoid;
+    break-after: avoid;
+}
+
+/* The number of the note in an expanded footnote (e.g. [3]) */
+.note-number {
+    font-weight: bold;
+    margin-right: 1em;
+}
+
+td.note-number {
+    vertical-align: top;
+}
+
+/* When footnotes (try to) be diplayed as margin notes */
+.sidenote {
+    display: block;
+    float: right;
+    width: 30%;
+    border: 1px solid black;
+    margin: 1em;
+    padding: .5em;
+    margin-right: -1.5em;
+}
+
+.sidenote .note-number {
+    float: left;
+}
+
+/* The div class displaying notes at the end of a chapter */
+div.notes {
+    text-align: justify;
+    border-top: thin dashed black;
+    margin-top: 1em;
+}
+
+table.notes {
+    border-collapse: collapse;
+    border-style: hidden;
+}
+
+table.notes tr td {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+table.notes tr td p {
+    text-indent: 0;
+}
+                 
+/* Every markdown table is included in a <div class = "table"> */
+.table {
+    margin: 1em;
+}
+
+.table table {
+    width: 80%;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+    border-collapse: collapse;
+}
+
+.table table th, .table table td {
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+}
+
+.table table th {
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+
+span.initial { 
+    float: left;
+    font-size: 285%;
+    font-weight: bold;
+    margin-right: 0.05em;
+    line-height: 0.8em;
+}
+
+p.first-para {
+    text-indent: 0;
+}
+
+/* Use this for escape narrow space so it is non-breaking */
+.nnbsp {
+    /* white-space: nowrap;*/
+    word-spacing: -0.13em;
+    /* Following necessary for Kobo EPUB3 reader??? */
+    margin: 0;
+    padding: 0;
+}
+
+/* Default  HTML CSS file includes default EPUB CSS file */
+
+/* Colors for the navigation menu (toc) */
+nav {
+    background: #CBBFCC;
+    color: black;
+    border-right-color: black;
+}
+
+#nav a:link {
+    color: black;
+}
+
+#nav a:visited {
+    color: black;
+}
+
+/* Colors for top and footer */
+#top {
+    background-color: #444343;
+    color: white;
+}
+
+footer {
+    background-color: #444343;
+    color: white;
+}
+
+footer a, #top a {
+    color: #fc71ff;
+}
+
+footer a:hover, #top a:hover {
+    color: #b743fe;
+}
+
+/* Additional elements, only use for proofreading */
+/* Grammar error */
+.grammar-error {
+    color: red;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+/*    background: #d966ff;*/
+}
+
+
+p.first-para:first-letter {
+    font-size: 300%;
+    float: left;
+    font-weight: bold;
+    margin-right: 0.05em;
+    line-height: 1em;
+}
+
+/* The nav element corresponding to the navigation menu */
+nav {
+    z-index: 2;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+    overflow-y: auto;
+    font-size: 80%;
+    margin-left: 0;
+    border-right-width: 2px;
+    border-right-style: dashed;
+}
+
+#nav code {
+    background-color: transparent;
+}
+
+#nav a:link {
+    text-decoration: none;
+}
+
+#nav a:visited {
+    text-decoration: none;
+}
+
+#nav {
+    text-align: left;
+}
+
+#nav h2 {
+    text-align: center;
+}
+
+#nav li {
+    list-style-type: none;
+    text-indent: -1em;
+}
+
+#nav li:before {
+    content: none;
+}
+
+#nav ul {
+    padding-right: 1em;
+    padding-left: 1.5em;
+}
+
+/* The menu containing the button to display the navigation bar */
+#menu {
+    position: fixed;
+    z-index: 2;
+    top: 0em;
+    left: 1em;
+    transition: left 1s;
+}
+
+#menu img {
+    opacity: 0.5;
+}
+
+#menu img:hover {
+    opacity: 1.0;
+    cursor: pointer;
+}
+
+#menu-button {
+    height: 1.5em;
+    padding: 0.5em;
+}
+
+#book-button {
+    height: 1.5em;
+    padding: 0.5em;
+    float: left;
+}
+
+/* Hide navigation bar */
+#nav {
+    left: -21%;
+    transition: left 1s;
+}
+
+/* The main content of the book */
+#content {
+    overflow-y: auto;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    transition: margin-left 1s;
+}
+
+/* Used for multifiles HTML */
+.prev_chapter {
+    text-align: left;
+    text-indent: 0;
+    margin-bottom: 1em;
+    font-size: 120%;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+.next_chapter {
+    text-align: right;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 120%;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+/* Improving readability for the HTML format only */
+p, blockquote, li, .image  {
+    margin-right: auto;
+    max-width: 33em;
+}
+
+blockquote {
+    padding: 1em;
+}
+
+#content {
+    text-align: center;
+}
+
+#page {
+    display: inline-block;
+    text-align: justify;
+    max-width: 33em;
+}
+
+#nav-container {
+    top: 0;
+    width: 100%;
+}
+
+#nav-title {
+    top: 0;
+}
+
+#toolbar {
+    top: 0;
+    float: left;
+}
+
+#toolbar img {
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
+#top {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+#top p {
+    font-family: "Linux Biolinum";
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+footer, #top {
+    padding-top: .25em;
+    padding-bottom: .25em;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    transition: margin-left 1s;
+}
+
+footer a, #top a {
+    text-decoration: none;
+}
+
+footer p, #top p {
+    text-indent: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    max-width: 33em;
+}
+
+
+
+    </style>
+    <style type = "text/css" media = "print">
+      #page {
+    display: block;
+}
+
+.chapter {
+    page-break-before: always;
+}
+
+#menu {
+    display: none;
+}
+
+#nav {
+    display: none;
+}
+    </style>
+   <script>
+function on(name) {
+    var elements = document.getElementsByClassName(name);
+    for (var i = 0; i < elements.length; i++) {
+        var elem = elements[i];
+        elem.style.backgroundColor = "pink";
+    }
+}
+function off(name) {
+    var elements = document.getElementsByClassName(name);
+    for (var i = 0; i < elements.length; i++) {
+        var elem = elements[i];
+        elem.style.backgroundColor = "white";
+    }
+}
+
+var display_menu = false;
+function toggle() {
+    if (display_menu == true) {
+        display_menu = false;
+        document.getElementById("nav").style.left = "-21%";
+        document.getElementById("content").style.marginLeft = "0%";
+        document.getElementById("menu").style.left = "1em";
+/*        if(document.getElementById("top")) {
+            document.getElementById("top").style.left = "0";
+        }
+        if(document.getElementById("footer")) {
+            document.getElementById("footer").style.marginLeft = "0%";
+        }*/
+    } else {
+        display_menu = true;
+        document.getElementById("nav").style.left = "0";
+        document.getElementById("content").style.marginLeft = "20%";
+        document.getElementById("menu").style.left = "20%";
+/*        if(document.getElementById("top")) {
+            document.getElementById("top").style.left = "20%";
+        }
+        if(document.getElementById("footer")) {
+            document.getElementById("footer").style.marginLeft = "20%";
+        }*/
+    }
+}
+
+
+
+   </script>
+
+
+  </head>
+  <body>
+    
+<script type = 'application/ld+json'>
+{
+    "@context": "http://schema.org/",
+    "@type": "Book",
+    "author": "Novean Institute of Standards",
+    "name": "NIS Manual",
+    "version": "0.0.0",
+    
+    
+    
+    "about": "The NIS Manual of Aviation and Port Interchange Procedures",
+    "inLanguage": "en"
+
+
+
+
+}
+</script>
+    <nav id = "nav">
+      <div id = "nav-title">
+        <h2><a href = "#link-0">NIS Manual</a></h2>
+      </div>
+      <ul>
+<li><a href="#link-1">Acknowledgements</a></li>
+<li><a href="#link-2">Introduction</a></li>
+<li><a href="#link-3">Guidelines</a>
+<ul><li><a href="#link-4">1.1. Changing Standards</a>
+<ul><li><a href="#link-5">1.1.1. What is a SIP?</a></li>
+<li><a href="#link-6">1.1.2. SIP Types</a></li>
+
+</ul>
+</li>
+<li><a href="#link-7">1.2. Writing and Formatting</a></li>
+<li><a href="#link-8">1.3. Appeals</a></li>
+
+</ul>
+</li>
+<li><a href="#link-9">Identification</a>
+<ul><li><a href="#link-10">2.1. Semiotics</a>
+<ul><li><a href="#link-11">2.1.1. Flagging</a></li>
+<li><a href="#link-12">2.1.2. Signs</a>
+<ul><li><a href="#link-13">2.1.2.1. Atmospheric Signs</a></li>
+<li><a href="#link-14">2.1.2.2. Atmospheric Billboards</a></li>
+<li><a href="#link-15">2.1.2.3. Space Signs</a></li>
+<li><a href="#link-16">2.1.2.4. Space Billboards</a></li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><a href="#link-17">Navigation</a>
+<ul><li><a href="#link-18">3.1. Port Interchange Protocol:</a>
+<ul><li><a href="#link-19">3.1.1. Introduction</a>
+<ul><li><a href="#link-20">3.1.1.1. Motivation</a></li>
+<li><a href="#link-21">3.1.1.2. Key Concepts</a></li>
+<li><a href="#link-22">3.1.1.3. Issues not addressed by this proposal</a></li>
+
+</ul>
+</li>
+<li><a href="#link-23">3.1.2. The Port Interchange</a>
+<ul><li><a href="#link-24">3.1.2.1. Speed Zone</a></li>
+<li><a href="#link-25">3.1.2.2. Alignment Zone</a></li>
+<li><a href="#link-26">3.1.2.3. Transition Zone</a></li>
+<li><a href="#link-27">3.1.2.4. Restricted Zone</a></li>
+
+</ul>
+</li>
+<li><a href="#link-28">3.1.3. Implementation</a>
+<ul><li><a href="#link-29">3.1.3.1. For Pilots and Navigators</a>
+<ul><li><a href="#link-30">3.1.3.1.1. Approach and Take-off Vectors</a></li>
+<li><a href="#link-31">3.1.3.1.2. Vertical Take-off and Landing (VTOL) concepts</a></li>
+
+</ul>
+</li>
+<li><a href="#link-32">3.1.3.2. For Facility Owners</a></li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+
+</ul>
+
+    </nav>
+
+    <div id = "content">
+      <div id = "top"><p id = "para-60">NIS Manual 0.0.0</p>
+</div>
+      <div id = "page">
+        <header>
+
+          <div id = "menu">
+            <img id = "menu-button" onclick="toggle();"
+                 src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gQ3JlYXRlZCB3aXRoIElua3NjYXBlIChodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy8pIC0tPgoKPHN2ZwogICB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iCiAgIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiCiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIKICAgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiCiAgIHhtbG5zOmlua3NjYXBlPSJodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy9uYW1lc3BhY2VzL2lua3NjYXBlIgogICB3aWR0aD0iMjAwbW0iCiAgIGhlaWdodD0iMjAwbW0iCiAgIHZpZXdCb3g9IjAgMCA3MDguNjYxNDIgNzA4LjY2MTQxIgogICBpZD0ic3ZnMiIKICAgdmVyc2lvbj0iMS4xIgogICBpbmtzY2FwZTp2ZXJzaW9uPSIwLjkxIHIxMzcyNSIKICAgc29kaXBvZGk6ZG9jbmFtZT0ibWVudS5zdmciPgogIDxkZWZzCiAgICAgaWQ9ImRlZnM0IiAvPgogIDxzb2RpcG9kaTpuYW1lZHZpZXcKICAgICBpZD0iYmFzZSIKICAgICBwYWdlY29sb3I9IiNmZmZmZmYiCiAgICAgYm9yZGVyY29sb3I9IiM2NjY2NjYiCiAgICAgYm9yZGVyb3BhY2l0eT0iMS4wIgogICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwLjAiCiAgICAgaW5rc2NhcGU6cGFnZXNoYWRvdz0iMiIKICAgICBpbmtzY2FwZTp6b29tPSIwLjQ5NDk3NDc1IgogICAgIGlua3NjYXBlOmN4PSIxMDUuNjEyNzUiCiAgICAgaW5rc2NhcGU6Y3k9IjQwNy4wNjM5MSIKICAgICBpbmtzY2FwZTpkb2N1bWVudC11bml0cz0icHgiCiAgICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0ibGF5ZXIxIgogICAgIHNob3dncmlkPSJmYWxzZSIKICAgICBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9IjEzNjYiCiAgICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iNzA0IgogICAgIGlua3NjYXBlOndpbmRvdy14PSIwIgogICAgIGlua3NjYXBlOndpbmRvdy15PSIyNyIKICAgICBpbmtzY2FwZTp3aW5kb3ctbWF4aW1pemVkPSIxIiAvPgogIDxtZXRhZGF0YQogICAgIGlkPSJtZXRhZGF0YTciPgogICAgPHJkZjpSREY+CiAgICAgIDxjYzpXb3JrCiAgICAgICAgIHJkZjphYm91dD0iIj4KICAgICAgICA8ZGM6Zm9ybWF0PmltYWdlL3N2Zyt4bWw8L2RjOmZvcm1hdD4KICAgICAgICA8ZGM6dHlwZQogICAgICAgICAgIHJkZjpyZXNvdXJjZT0iaHR0cDovL3B1cmwub3JnL2RjL2RjbWl0eXBlL1N0aWxsSW1hZ2UiIC8+CiAgICAgICAgPGRjOnRpdGxlPjwvZGM6dGl0bGU+CiAgICAgIDwvY2M6V29yaz4KICAgIDwvcmRmOlJERj4KICA8L21ldGFkYXRhPgogIDxnCiAgICAgaW5rc2NhcGU6bGFiZWw9IkxheWVyIDEiCiAgICAgaW5rc2NhcGU6Z3JvdXBtb2RlPSJsYXllciIKICAgICBpZD0ibGF5ZXIxIgogICAgIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsLTM0My43MDA3OSkiPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDQ2OS41MDUxIDUwMCwwIgogICAgICAgaWQ9InBhdGg0MTM2IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIgLz4KICAgIDxwYXRoCiAgICAgICBzdHlsZT0iZmlsbDpub25lO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoxMDA7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLWRhc2hhcnJheTpub25lO3N0cm9rZS1vcGFjaXR5OjEiCiAgICAgICBkPSJtIDEwNC4zMzA3MSw3MDQuNTA1MSA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIKICAgICAgIGlua3NjYXBlOnRyYW5zZm9ybS1jZW50ZXIteD0iNzEuNDI4NTcyIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci15PSItMjQyLjg1NzE2IiAvPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDkzOS41MDUwNiA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01LTMiCiAgICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci14PSI3MS40Mjg1NzIiCiAgICAgICBpbmtzY2FwZTp0cmFuc2Zvcm0tY2VudGVyLXk9Ii0yNDIuODU3MTYiIC8+CiAgPC9nPgo8L3N2Zz4K"
+                 alt = "Table of contents" title = "Table of contents" />
+          </div>
+	  <h2 class="author">Novean Institute of Standards</h2>
+          <h1 id = "link-0" class="title" >NIS Manual</h1>
+	  
+        </header>
+
+        <div id = "toc">
+  <h1>Table of contents</h1>
+  <ul>
+<li><a href="#link-1">Acknowledgements</a></li>
+<li><a href="#link-2">Introduction</a></li>
+<li><a href="#link-3">Guidelines</a>
+<ul><li><a href="#link-4">1.1. Changing Standards</a>
+<ul><li><a href="#link-5">1.1.1. What is a SIP?</a></li>
+<li><a href="#link-6">1.1.2. SIP Types</a></li>
+
+</ul>
+</li>
+<li><a href="#link-7">1.2. Writing and Formatting</a></li>
+<li><a href="#link-8">1.3. Appeals</a></li>
+
+</ul>
+</li>
+<li><a href="#link-9">Identification</a>
+<ul><li><a href="#link-10">2.1. Semiotics</a>
+<ul><li><a href="#link-11">2.1.1. Flagging</a></li>
+<li><a href="#link-12">2.1.2. Signs</a>
+<ul><li><a href="#link-13">2.1.2.1. Atmospheric Signs</a></li>
+<li><a href="#link-14">2.1.2.2. Atmospheric Billboards</a></li>
+<li><a href="#link-15">2.1.2.3. Space Signs</a></li>
+<li><a href="#link-16">2.1.2.4. Space Billboards</a></li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><a href="#link-17">Navigation</a>
+<ul><li><a href="#link-18">3.1. Port Interchange Protocol:</a>
+<ul><li><a href="#link-19">3.1.1. Introduction</a>
+<ul><li><a href="#link-20">3.1.1.1. Motivation</a></li>
+<li><a href="#link-21">3.1.1.2. Key Concepts</a></li>
+<li><a href="#link-22">3.1.1.3. Issues not addressed by this proposal</a></li>
+
+</ul>
+</li>
+<li><a href="#link-23">3.1.2. The Port Interchange</a>
+<ul><li><a href="#link-24">3.1.2.1. Speed Zone</a></li>
+<li><a href="#link-25">3.1.2.2. Alignment Zone</a></li>
+<li><a href="#link-26">3.1.2.3. Transition Zone</a></li>
+<li><a href="#link-27">3.1.2.4. Restricted Zone</a></li>
+
+</ul>
+</li>
+<li><a href="#link-28">3.1.3. Implementation</a>
+<ul><li><a href="#link-29">3.1.3.1. For Pilots and Navigators</a>
+<ul><li><a href="#link-30">3.1.3.1.1. Approach and Take-off Vectors</a></li>
+<li><a href="#link-31">3.1.3.1.2. Vertical Take-off and Landing (VTOL) concepts</a></li>
+
+</ul>
+</li>
+<li><a href="#link-32">3.1.3.2. For Facility Owners</a></li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+
+</ul>
+
+</div>
+<div id = "chapter-0" class = "chapter">
+  <h1 id = 'link-1'>Acknowledgements</h1><p id = "para-1">A special thank you is extended to all organizations and individuals who have contributed to this document, and have tested these procedures on the field.</p>
+
+</div><div id = "chapter-1" class = "chapter">
+  <h1 id = 'link-2'>Introduction</h1><p id = "para-2">This space serves as a home to a developing set of standards for aviation communication and port interchange policies.</p>
+
+</div><div id = "chapter-2" class = "chapter">
+  <h1 id = 'link-3'><span class = 'chapter-header'>Section 1</span><br />Guidelines</h1><p id = "para-3">The guidelines for the formatting NIS standards contained in this book.</p>
+<ul>
+<li><p id = "para-4"><a href = "#chapter-3">Changing Standards</a></p>
+</li>
+<li><p id = "para-5"><a href = "#chapter-4">Writing and Formatting</a></p>
+</li>
+<li><p id = "para-6"><a href = "#chapter-5">Appeals</a></p>
+</li>
+</ul>
+
+</div><div id = "chapter-3" class = "chapter">
+  <h2 id = "link-4">1.1. Changing Standards</h2>
+<p id = "para-7">The guidelines for submitting a modification to a standard contained in this book.</p>
+<ul>
+<li><p id = "para-8"><a href = "Guidelines/#what-is-a-sip">What is a SIP?</a></p>
+</li>
+<li><p id = "para-9"><a href = "Guidelines/#sip-types">SIP Types</a></p>
+</li>
+</ul>
+<h3 id = "link-5">1.1.1. What is a SIP?</h3>
+<p id = "para-10">SIP stands for Standards Improvement Proposal. A SIP is a design document providing information to NIS describing a new standard, recommendation, or a change to an existing standard. The SIP should provide a concise specification of the feature and a rationale for the feature.</p>
+<p id = "para-11">SIPs are intended to be the primary mechanisms for proposing new standards, for collecting input on an issue, and for documenting the design decisions that have gone into the NIS Standards. The SIP author is responsible for building consensus and documenting dissenting opinions.</p>
+<p id = "para-12">Because standards are maintained as text files in a versioned repository, their revision history is the historical record of the NIS Standards.</p>
+<h3 id = "link-6">1.1.2. SIP Types</h3>
+<p id = "para-13">The following is a brief outline of the various types of SIPs, however each will be covered in full detail in their respective sections.</p>
+<ul>
+<li><p id = "para-14"><b>Fundamentals SIP</b> - Will cover a standards proposal that will be required fundamental knowledge for all users impacted. If a Fundamentals SIP is accepted, a grace period will be enacted so that users can train and/or adapt to the changes as needed.</p>
+<p id = "para-15">An example of a Fundamentals SIP would be the usage of UTC as the base time, in which all traffic controllers and pilots would need to be adapt to communicating only in UTC time.</p>
+</li>
+<li><p id = "para-16"><b>Recommendation SIP</b> - Will cover a standards proposal for non-binding guidance or best practice recommendations. If a Recommendation SIP is accepted, it’s not expected that any parties adhere to it, though it’s understood that following it may lead to a better experience for impacted users.</p>
+<p id = "para-17">An example of a Recommendation SIP would be using Illuminated Voxels in a specific pattern on a landing pad to denote nearby amenities for specific ship classes. While not necessary, it may improve the pilot landing experience.</p>
+</li>
+</ul>
+
+</div><div id = "chapter-4" class = "chapter">
+  <h2 id = "link-7">1.2. Writing and Formatting</h2>
+<p id = "para-18">The guidelines and rules for submitting a new standard for inclusion in this book.</p>
+
+</div><div id = "chapter-5" class = "chapter">
+  <h2 id = "link-8">1.3. Appeals</h2>
+<p id = "para-19">Appealing a decision on a submission.</p>
+
+</div><div id = "chapter-6" class = "chapter">
+  <h1 id = 'link-9'><span class = 'chapter-header'>Section 2</span><br />Identification</h1><p id = "para-20">Identification is the process of self-identify yourself to a port, waystations and other ships.</p>
+<ul>
+<li><p id = "para-21"><a href = "#chapter-7">Semiotics</a></p>
+</li>
+</ul>
+
+</div><div id = "chapter-7" class = "chapter">
+  <h2 id = "link-10">2.1. Semiotics</h2>
+<p id = "para-22">The standards for signs and symbols and their use or interpretation.</p>
+<ul>
+<li><p id = "para-23"><a href = "Identification/Semiotics/#flagging">Flagging</a></p>
+</li>
+<li><p id = "para-24"><a href = "Identification/Semiotics/#signs">Signs</a></p>
+<ul>
+<li><p id = "para-25"><a href = "Identification/Semiotics/#atmospheric-signs">Atmospheric Signs</a></p>
+</li>
+<li><p id = "para-26"><a href = "Identification/Semiotics/#atmospheric-billboards">Atmospheric Billobards</a></p>
+</li>
+<li><p id = "para-27"><a href = "Identification/Semiotics/#space-signs">Space Signs</a></p>
+</li>
+<li><p id = "para-28"><a href = "Identification/Semiotics/#space-billboards">Space Billboards</a></p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id = "link-11">2.1.1. Flagging</h3>
+<h3 id = "link-12">2.1.2. Signs</h3>
+<h4 id = "link-13">2.1.2.1. Atmospheric Signs</h4>
+<h4 id = "link-14">2.1.2.2. Atmospheric Billboards</h4>
+<h4 id = "link-15">2.1.2.3. Space Signs</h4>
+<h4 id = "link-16">2.1.2.4. Space Billboards</h4>
+
+</div><div id = "chapter-8" class = "chapter">
+  <h1 id = 'link-17'><span class = 'chapter-header'>Section 3</span><br />Navigation</h1><p id = "para-29">The guidelines for Navigation as defined by NIS.</p>
+<ul>
+<li><p id = "para-30"><a href = "#chapter-9">Port Interchange</a></p>
+</li>
+</ul>
+
+</div><div id = "chapter-9" class = "chapter">
+  <h2 id = "link-18">3.1. Port Interchange Protocol:</h2>
+<p id = "para-31"><em>Concept: a proposal for a standard of customs to be utilized for take-off from, and landing at, locations in</em> Dual Universe</p>
+<ul>
+<li><p id = "para-32"><a href = "Navigation/PortInterchange/#introduction">Introduction</a></p>
+<ul>
+<li><p id = "para-33"><a href = "Navigation/PortInterchange/#motivation">Motivation</a></p>
+</li>
+<li><p id = "para-34"><a href = "Navigation/PortInterchange/#key-concepts">Key Concepts</a></p>
+</li>
+<li><p id = "para-35"><a href = "Navigation/PortInterchange/#issues-not-addressed-by-this-proposal">Issues not addressed by this proposal</a></p>
+</li>
+</ul>
+</li>
+<li><p id = "para-36"><a href = "Navigation/PortInterchange/#the-port-interchange">Port Interchange</a></p>
+<ul>
+<li><p id = "para-37"><a href = "Navigation/PortInterchange/#speed-zone">Speed Zone</a></p>
+</li>
+<li><p id = "para-38"><a href = "Navigation/PortInterchange/#alignment-zone">Alignment Zone</a></p>
+</li>
+<li><p id = "para-39"><a href = "Navigation/PortInterchange/#transition-zone">Transition Zone</a></p>
+</li>
+<li><p id = "para-40"><a href = "Navigation/PortInterchange/#restricted-zone">Restricted Zone</a></p>
+</li>
+</ul>
+</li>
+<li><p id = "para-41"><a href = "Navigation/PortInterchange/#implementation">Implementation</a></p>
+<ul>
+<li><p id = "para-42"><a href = "Navigation/PortInterchange/#for-pilots-and-navigators">For Pilots and Navigators</a></p>
+<ul>
+<li><p id = "para-43"><a href = "Navigation/PortInterchange/#approach-and-take-off-vectors">Approach and Take-off Vectors</a></p>
+</li>
+<li><p id = "para-44"><a href = "Navigation/PortInterchange/#vertical-take-off-and-landing-vtol-concepts">Vertical Take-off and Landing concepts</a></p>
+</li>
+</ul>
+</li>
+<li><p id = "para-45"><a href = "Navigation/PortInterchange/#for-facility-owners">For Facility Owners</a></p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id = "link-19">3.1.1. Introduction</h3>
+<p id = "para-46">This document describes a proposal for a set of standards, customs, and definitions for a protocol to be used when travelling from one player-made point of interest to another, specifically for those that provide Port Facilities. It contains guidelines for a set of customs for players to follow when near such a location, and to define a set standards and practices to be implemented by Port Facility owners.</p>
+<h4 id = "link-20">3.1.1.1. Motivation</h4>
+<p id = "para-47">The primary motivation for this proposal is safety - to offer players a way to travel from one location to another while mitigating concerns of collisions with the landscape, buildings, players, and other vehicles. If a player can be assured that they have a specific plan to arrive at or depart from any given location, and that other players in the vicinity also have a similar plan, that player may develop a stronger sense of community within the game, simply because the act of travelling itself would be less worrisome.</p>
+<p id = "para-48">Another motivation for this proposal is simplicity. As of this document’s creation, Dual Universe has only one navigational indicator - the destination. This indicator is simply a representation of a point in space relative to the player, along with the relative distance from the player to the location. This proposal currently utilizes this indicator, and builds its concepts around it.</p>
+<h4 id = "link-21">3.1.1.2. Key Concepts</h4>
+<p id = "para-49"><b>Dead Reckoning.</b> All elements of this standard are centered around information provided by waypoints (Destinations), therefore any element dealing with distance will use the player’s distance from a particular waypoint.</p>
+<p id = "para-50"><b>Zones.</b> A <em>Zone</em> is an area, defined in its simplest form as a circle, and extended into cylinders and spheres, indicating a specific pattern of behavior for a pilot to adhere to within the specified area.</p>
+<p id = "para-51"><b>Port Facilities.</b> A <em>Port Facility</em> in the scope of this proposal is a specific, centralized location that any number of players may travel to and from using vehicles, and usually provides dedicated areas for landing, refitting/refueling, and take-off. Examples of port facilities are organization headquarters, player-made spaceports and space stations.</p>
+<p id = "para-52"><b>Navigational Aids.</b> A <em>Navigational</em> Aid can be a waypoint(destination), or a vector indicator - a physical representation of the direction a vehicle should be travelling along when taking off or landing. Currently, the waypoint and vector indicator are the only tools provided in-game.</p>
+<p id = "para-53"><b>Pilots’ priorities.</b> Due to the nature of the information available to pilots and the current limitation, this proposal cannot completely ensure safe and unobstructed travel near port facilities. Therefore, pilots must still maintain situational awareness during flight within zones, and should yield to traffic already present in applicable zones.</p>
+<p id = "para-54"><b>Space.</b> For the purposes of this document, the term <em>space</em> will refer to both “airspace” - the area above ground in relation to various concepts, as well as the “space” around an asteroid or space station.</p>
+<h4 id = "link-22">3.1.1.3. Issues not addressed by this proposal</h4>
+<p id = "para-55">As of this document’s creation, its sole purpose is to provide a singular standard for navigating the space associated with a location, using only in-game information available to any player. it <em>does not</em> define a standard for any other aspect of navigation associated with landing and take-off, whether done through active interaction with other players(Air Traffic Controllers), or with the use of in-game scripting. This standard also does not define any sort of its own enforcement, and its utilization should be done through mutual acceptance, or enforced from within a player’s organization.</p>
+<h3 id = "link-23">3.1.2. The Port Interchange</h3>
+<p id = "para-56">All zones of the Port Interchange will be concentric to a waypoint, placed just above the landing/take-off area of a location. Typically, a map-generated waypoint will be innacurate for the purposes of this standard, and therefore should be manually generated by a player/organization. In addition, this waypoint should be shared with all players who would have access to its associated location.</p>
+<h4 id = "link-24">3.1.2.1. Speed Zone</h4>
+<p id = "para-57">The <em>Speed Zone</em> of a location is the outermost boundary of the port interchange. It is the first interaction with an interchange for players arriving to a location, and the last interaction for players travelling away from a location. for surface-based locations, it is a cylinder with a radius of <em>N</em> m, with the base of which is coplanar with the surface around a location, extending upwards around the space of a location. for locations in space, it is a sphere with a radius of <em>N</em> m. while the player is inside of this zone, a vehicle’s speed should remain as close to <em>N</em> km/h as possible. For pilots approaching a location piloting vehicles that may not be able to completely slow their vehicle to the indicated limit <em>before</em> approaching the alignment zone, should start to reduce speed <em>before</em> entering the speed zone to ensure this limit is attainable.</p>
+<h4 id = "link-25">3.1.2.2. Alignment Zone</h4>
+<p id = "para-58">The <em>Alignment Zone</em> of a location is next closest boundary of the port interchange, and is concentric with the Speed Zone. for planar locations, it is a cylinder with a radius of <em>N</em> m, exending upward into the space around a location. for space-based locations, it is a sphere of <em>N</em> m, which is concentric to the Speed Zone. The purpose of the Alignment Zone is to define an area from which a vehicle will change from travelling in a straight line towards/away from a location into the “circling” pattern defined by the <em>Transition Zone</em>. For pilots departing from a location, care should be taken to ensure manuevers Due to the area of this zone being within the speed zone, a player must maintain the speed defined in the <em>Speed Zone</em>. This zone may also have a higher density of traffic, therefore pilots should be increasingly more cautious when entering and leaving this zone.</p>
+<h4 id = "link-26">3.1.2.3. Transition Zone</h4>
+<h4 id = "link-27">3.1.2.4. Restricted Zone</h4>
+<h3 id = "link-28">3.1.3. Implementation</h3>
+<h4 id = "link-29">3.1.3.1. For Pilots and Navigators</h4>
+<h5 id = "link-30">3.1.3.1.1. Approach and Take-off Vectors</h5>
+<h5 id = "link-31">3.1.3.1.2. Vertical Take-off and Landing (VTOL) concepts</h5>
+<h4 id = "link-32">3.1.3.2. For Facility Owners</h4>
+
+</div>
+
+      </div>
+      <footer id = "footer"><p id = "para-59">Generated by <a href = "https://github.com/lise-henry/crowbook">Crowbook</a> 0.15.2</p>
+</footer>
+    </div>
+  </body>
+</html>
