@@ -12,9 +12,9 @@ A special thank you is extended to all organizations and individuals who have co
   
 **Donors**
 
-*Igneus Tempus
-*Akanixon
+* Igneus Tempus
+* Akanixon
 
 **Member Organizations**
 
-*Rekium
+* Rekium
