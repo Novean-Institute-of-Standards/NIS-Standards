@@ -65,14 +65,14 @@ the *Approach Vector* and *Take-off Vector* are separate direction indicators mo
 
 **Alignment Zone.**  This zone may also have a higher density of traffic, therefore pilots should be increasingly more cautious when entering and leaving this zone.  When pilots are departing from a location and are in the Alignment zone to the speed zone, their waypoint can be changed another in regards to their destination, and then may proceed in a straight vector towards it.  
 
-**Transition Zone.**   Approaching vehicles should remain in this zone until both a transition to the approach vector can be made without further intrusion into the location, and when there is no traffic blocking such a maneuver. Inversely, pilots with the intent to take-off and merge into the Transition Zone.  Pilots merging into the Alignment zone from the *Take-off Vector* must yield to traffic entering or already present in the Alignment Zone.
+**Transition Zone.**   Approaching vehicles should remain in this zone until both a transition to the approach vector can be made without further intrusion into the location, and when there is no traffic blocking such a maneuver. Inversely, pilots with the intent to take-off and merge into the Transition Zone from the Take-off Vector must yield to traffic entering or already present in the Alignment Zone.
 
 ### For Facility Owners
 **Zone Sizes and Speed Limits.**  For the purposes of the proposal of this standard, none of distances and speeds referenced within this proposal have been given real values.  Further discussion will be needed to discern the needs of this standard.
 
 **Approach and Take-off Vector Indicators.**  As a Facility Owner,  there is no current guideline for the manner in which *Vector Indicators* should be advertised to Pilots, however, the visibility of these indicators should be clear and conspicuous to any pilot currently within the *Transition Zone*.  any combination of voxels and/or screens may be used to communicate this information; with a strong preference towards voxels, as their visibility is much clearer compared to screens.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjkwNDM4MjYsMTUyMzMyNzE2OSwtMj
+eyJoaXN0b3J5IjpbLTE3NzIxMTM0MzYsMTUyMzMyNzE2OSwtMj
 A3NTEyNzYzMCw0NTQ4MzY3MjYsLTE0MzU4NDEzNzEsOTI1MDA0
 MDk5XX0=
 -->
