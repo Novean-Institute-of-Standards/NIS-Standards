@@ -54,7 +54,7 @@ The *Alignment Zone* of a location is next closest boundary of the port intercha
 The *Transition Zone* of a location defines the path to be taken by vehicles before turning into Approach and take-off vectors.  for planar locations, this zone will be a circle with a radius of *N* m, and runs parallel at a pre-defined height above the surface.  for orbital locations, this zone will be a circle that is coplanar with the approach and take-off vectors and aligned with the locations gravity(if any).  pilots will use this zone to maintain a set distance from the location's waypoint.  Like the Alignment zone, the Transition zone is also within the speed zone, and all guidelines for vehicles within the speed zone apply to this zone as well.
 
 #### Approach and Take-off Vectors
-the *Approach Vector* and *Take-off Vector* are separate direction indicators moving towards and away from a location, respectively.  for vehicles on an approach vector, a location may have a lower speed for the purpose of taxiing out of the vector and onto a final landing point.  For vehicles intending to take off,  location-specific guidelines may be made concerning right-of-way when entering a take-off vec
+the *Approach Vector* and *Take-off Vector* are separate direction indicators moving towards and away from a location, respectively.  for vehicles on an approach vector, a location may have a lower speed and right-of-way guidelines for the purpose of taxiing out of the vector and onto a final landing point.  For vehicles intending to take off,  location-specific guidelines may be made concerning right-of-way when entering a take-off vector.
 
 #### Vertical Take-off and Landing (VTOL) concepts
 
@@ -69,6 +69,6 @@ the *Approach Vector* and *Take-off Vector* are separate direction indicators mo
 
 ### For Facility Owners
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzMTAyNDM5NiwtMjA3NTEyNzYzMCw0NT
-Q4MzY3MjYsLTE0MzU4NDEzNzEsOTI1MDA0MDk5XX0=
+eyJoaXN0b3J5IjpbLTE0MzA1Mzc2NDUsLTIwNzUxMjc2MzAsND
+U0ODM2NzI2LC0xNDM1ODQxMzcxLDkyNTAwNDA5OV19
 -->
